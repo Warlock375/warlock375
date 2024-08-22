@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías Profesionales</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para ajustar la imagen al contorno en la sección Intro */
+        .intro-image {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        /* Estilo para el logotipo */
+        .logo img {
+            height: 50px; /* Ajusta la altura del logotipo según sea necesario */
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logotipo -->
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logotipo"></a>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#intro">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#ingresar">Ingresar</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#historicos">Antecedentes Históricos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="solucionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Soluciones de Problemas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
+                            <li><a class="dropdown-item" href="#transporte">Transporte</a></li>
+                            <li><a class="dropdown-item" href="#paqueteria">Paquetería</a></li>
+                            <li><a class="dropdown-item" href="#logistica">Logística</a></li>
+                            <li><a class="dropdown-item" href="#aviacion">Aviación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="capacitacionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Capacitación Gerencial
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="capacitacionDropdown">
+                            <li><a class="dropdown-item" href="#curso-basico">Curso Básico</a></li>
+                            <li><a class="dropdown-item" href="#curso-intermedio">Curso Intermedio</a></li>
+                            <li><a class="dropdown-item" href="#curso-master">Curso Master</a></li>
+                            <li><a class="dropdown-item" href="#curso-directivo">Curso Directivo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#suscribirse">Suscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Intro -->
+    <section id="intro" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="mb-4">Bienvenido a Asesorías Profesionales</h2>
+            <h3 class="font-weight-bold">El transporte del futuro</h3>
+            <img src="future bus.jpg" alt="Imagen Intro" class="intro-image">
+        </div>
+    </section>
+
+    <!-- Sección Ingresar -->
+    <section id="ingresar" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="mb-4">Ingresar</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="usuario" placeholder="Ingrese su nombre de usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección Antecedentes Históricos -->
+    <section id="historicos" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Antecedentes Históricos</h2>
+            <p class="lead">Somos una empresa con 18 años de experiencia en el campo del transporte profesional. Transformamos la forma tradicional de la movilidad de personas para confort y satisfacción de clientes.</p>
+        </div>
+    </section>
+
+    <!-- Sección Capacitación Gerencial -->
+    <section id="capacitacion" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Capacitación Gerencial</h2>
+            <p class="lead">Te ofrecemos cursos y talleres de capacitación para gerentes. Conoce nuestros planes y cursos disponibles.</p>
+            <p>Envía correo electrónico a <a href="mailto:solutions@jcandhc.com">solutions@jcandhc.com</a></p>
+        </div>
+    </section>
+
+    <!-- Sección Suscribirse -->
+    <section id="suscribirse" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="mb-4">Suscribirse</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombreEmpresa" class="form-label">Nombre de Empresa</label>
+                    <input type="text" class="form-control" id="nombreEmpresa" placeholder="Ingrese el nombre de su empresa">
+                </div>
+                <div class="mb-3">
+                    <label for="giro" class="form-label">Giro</label>
+                    <input type="text" class="form-control" id="giro" placeholder="Ingrese el giro de su empresa">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="intereses" class="form-label">Intereses</label>
+                    <textarea class="form-control" id="intereses" rows="3" placeholder="Ingrese sus intereses o necesidades"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Registro</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Asesorías Profesionales. Todos los derechos reservados. Juan Carlos Arizmendi & Héctor Cabada Arias</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-white" href="#">Política de Privacidad</a></li>
+                <li class="list-inline-item"><a class="text-white" href="#">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
